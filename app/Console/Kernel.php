@@ -18,8 +18,8 @@ class Kernel extends ConsoleKernel
      */
     protected function schedule(Schedule $schedule)
     {
-        $schedule->job(new GenerateExcelJob())->everyMinute();
-        $schedule->job(new GenerateTrafficPDF())->everyMinute();
+        $schedule->job(new GenerateExcelJob())->daily();
+        $schedule->job(new GenerateTrafficPDF())->daily();
     }
 
     /**
