@@ -1,3 +1,9 @@
+```
+composer install
+php artian migrate --seed
+```
+
+
 - [X] 6 digit url
 - [X] rate limiter
 - [X] authentication
